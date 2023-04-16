@@ -1,0 +1,27 @@
+/* WELCOME SECTION */
+
+.welcome {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.left-section {
+    width: 50%;
+}
+
+.right-section {
+    width: 50%;
+}
+
+.welcome .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.welcome h1 {
+    padding-bottom: var(--spacing-medium);
+    padding-top: var(--spacing-small);
+}
