@@ -13,6 +13,8 @@
 
 .right-section {
     width: 50%;
+    display: flex;
+    justify-content: center;
 }
 
 .welcome .container {
@@ -24,4 +26,115 @@
 .welcome h1 {
     padding-bottom: var(--spacing-medium);
     padding-top: var(--spacing-small);
+}
+
+.welcome .frame {
+    width: 400px;
+    height: 500px;
+    border: 4px solid var(--light-green);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.welcome .inner-frame {
+    width: 360px;
+    height: 460px;
+    border: 4px solid var(--light-green);
+}
+
+
+/* ABOUT ME SECTION */
+
+.about-me {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about-me .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 200px;
+}
+
+.about-me .left-section h2::before{
+    content: '01.';
+    font-size: 1.3rem;
+    font-family: Source code Pro, sans-serif;
+    color: var(--accent-color-2);
+}
+
+.about-me .skill-globe {
+    width: 40%;
+}
+
+.about-elements {
+    background-color: var(--light-green);
+    height: 500px;
+    width: 600px;
+    margin-top: 100px;
+}
+
+
+/* PROJECTS SECTION */
+
+.projects {
+    background-color: var(--dark-green);
+    padding-top: 300px;
+    margin-top: -150px;
+    height: 1500px;
+}
+
+.projects .container h2::before{
+    content: '02.';
+    font-size: 1.3rem;
+    font-family: Source code Pro, sans-serif;
+    color: var(--accent-color-2);
+}
+
+.projects .projects-container {
+    text-align: right;
+    padding-right: 100px;
+    padding-top: 50px;
+    transform-style: preserve-3d;
+    perspective: 800px;
+}
+
+.projects .projects-list {
+    transform-style: preserve-3d;
+}
+
+.projects .project-container {
+    transform: rotateY(-45deg) translateZ(0) scale(1);
+    transform-origin: right center;
+    transform-style: preserve-3d;
+}
+
+.projects .projects-container a {
+    font-size: 8rem;
+    line-height: 8rem;
+    font-weight: 800;
+    color: var(--accent-color-1);
+    text-transform: uppercase;
+}
+
+.projects .projects-container a:hover {
+    -webkit-text-stroke: 2px var(--accent-color-1);
+    -webkit-text-fill-color: transparent;
+}
+
+
+/* CONTACT SECTION */
+
+.contact {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+}
+
+.contact .container {
+    text-align: center;
 }
