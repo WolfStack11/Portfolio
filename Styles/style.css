@@ -1,3 +1,33 @@
+/* SOCIAL ICONS SECTION */
+
+.socials {
+    position: fixed;
+    bottom: 0;
+    left: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.socials svg {
+    height: 30px;
+    margin-bottom: 10px;
+    fill: #7c7c7c;
+    transition: 0.5s;
+}
+
+.socials svg:hover {
+    transform: translateY(-10px);
+    fill: var(--accent-color-1);
+}
+
+.socials .line {
+    height: 150px;
+    width: 1px;
+    background-color: #7c7c7c;
+}
+
+
 /* WELCOME SECTION */
 
 .welcome {
@@ -56,7 +86,6 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-top: 200px;
 }
 
 .about-me .left-section h2::before{
@@ -75,6 +104,17 @@
     height: 500px;
     width: 600px;
     margin-top: 100px;
+}
+
+.tagcloud {
+    display: inline-block;
+    font-size: 1.3rem;
+    font-family: Source code Pro, sans-serif;
+}
+
+.tagcloud--item:hover {
+    color: var(--accent-color-1);
+    cursor: pointer;
 }
 
 
@@ -99,7 +139,7 @@
     padding-right: 100px;
     padding-top: 50px;
     transform-style: preserve-3d;
-    perspective: 800px;
+    perspective: 1000px;
 }
 
 .projects .projects-list {
@@ -110,11 +150,18 @@
     transform: rotateY(-45deg) translateZ(0) scale(1);
     transform-origin: right center;
     transform-style: preserve-3d;
+    transition: 0.5s;
+}
+
+.projects .project-container:hover {
+    transform: rotateY(-20deg) translateZ(0) scale(1);
+    transform-origin: right center;
+    transform-style: preserve-3d;
 }
 
 .projects .projects-container a {
     font-size: 8rem;
-    line-height: 8rem;
+    line-height: 9rem;
     font-weight: 800;
     color: var(--accent-color-1);
     text-transform: uppercase;
@@ -137,4 +184,25 @@
 
 .contact .container {
     text-align: center;
+}
+
+.contact .container p {
+    max-width: 600px;
+    margin: var(--spacing-xl) 0;
+}
+
+.contact .container button {
+    background: linear-gradient(90deg, rgba(45,216,129,1) 0%, rgba(1,167,194,1) 100%);
+    border: none;
+    padding: 15px 40px;
+    font-family: Source code Pro, sans-serif;
+    font-weight: 800;
+    font-size: 1.2rem;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.contact .container button:hover {
+    transform: scale(1.1);
 }

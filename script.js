@@ -11,3 +11,22 @@ window.addEventListener('scroll', () => {
     }
     lastScrollY = currentScrollY;
 })
+
+
+// TAG CLOUD SCRIPT
+
+const Texts = [
+    'HTML', 'CSS', 'Javascript',
+    'React', 'GitHub', 'Bootstrap'
+];
+
+var tagCloud = TagCloud('.skill-globe', Texts, {
+    radius: 250,
+    maxSpeed: 'normal',
+    initSpeed: 'fast',
+    direction: 135,
+    keep: true
+})
+
+var color = '#01a7c2';
+document.querySelector('.skill-globe').style.color = color;
