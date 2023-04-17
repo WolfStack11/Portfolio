@@ -30,3 +30,15 @@ var tagCloud = TagCloud('.skill-globe', Texts, {
 
 var color = '#01a7c2';
 document.querySelector('.skill-globe').style.color = color;
+
+
+// WELCOME TEXT SCROLL
+
+let line1 = document.querySelector('.line-1');
+let line2 = document.querySelector('.line-2');
+
+window.onscroll = () => {
+    let pos = window.scrollY + 650;
+    line1.style.left = `${pos}px`;
+    line2.style.right = `${pos}px`; 
+}

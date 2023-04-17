@@ -27,27 +27,54 @@
     background-color: #7c7c7c;
 }
 
-footer .socials-contact {
-    display: none;
-}
-
-@media (max-width: 768px) {
-    .socials {
-        display: none;
-    }
-}
-
 /* MOBILE SOCIALS */
 .socials-contact {
     display: flex;
     justify-content: center;
+    display: none;
 }
 
 .socials-contact svg {
     margin: 20px 15px;
 }
 
+@media (max-width: 768px) {
+    .socials {
+        display: none;
+    }
 
+    footer .socials-contact {
+        display: flex;
+    }
+}
+
+
+/* WELCOME MESSAGE */
+.welcome-message {
+    height: 1400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.line-1 {
+    position: fixed;
+    top: 40%;
+    white-space: nowrap;
+}
+
+.line-2 {
+    position: fixed;
+    top: 50%;
+    white-space: nowrap;
+}
+
+@media (max-width: 768px) {
+    .welcome-message {
+        display: none;
+    }
+}
 
 /* WELCOME SECTION */
 
@@ -169,7 +196,6 @@ footer .socials-contact {
 @media (max-width: 768px) {
     .about-me .container {
         flex-direction: column;
-        margin-top: 80px;
     }
 
     .left-section {
