@@ -62,6 +62,8 @@ h4 {
 p {
     color: var(--text-light);
     font-weight: 400;
+    text-align: justify;
+    margin-bottom: var(--spacing-medium);
 }
 
 body {

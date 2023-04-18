@@ -101,9 +101,18 @@
     justify-content: space-between;
 }
 
-.welcome h1 {
-    padding-bottom: var(--spacing-medium);
-    padding-top: var(--spacing-small);
+.welcome .left-section span {
+    font-size: clamp(1.8rem, 7vw, 3.5rem);
+    color: var(--accent-color-1);
+    font-weight: 600;
+    line-height: clamp(2rem, 7vw, 3.5rem);
+}
+
+.welcome .left-section p {
+    margin-top: var(--spacing-medium);
+}
+.welcome .left-section h1 {
+    margin-bottom: var(--spacing-small);
 }
 
 .welcome .frame {
@@ -325,4 +334,8 @@
 
 .contact .container button:hover {
     transform: scale(1.1);
+}
+
+.contact p {
+    text-align: center;
 }
